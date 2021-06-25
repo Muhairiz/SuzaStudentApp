@@ -13,7 +13,7 @@ const ProfileStack = createStackNavigator();
 
 const ProfilePage = () => {
     return(
-        <View>
+        <View style={styles.container}>
             <Text>Profile Page</Text>
         </View>
     );
