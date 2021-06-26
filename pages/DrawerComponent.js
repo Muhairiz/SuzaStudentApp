@@ -8,8 +8,6 @@ import {
         DrawerItem
     } from "@react-navigation/drawer";
 import {Avatar,Title,Caption,Paragraph,Drawer,Text,TouchableRipple,Switch} from 'react-native-paper';
-import color from "color";
-import { Component } from "react";
 
 export function DrawerContent(props){
     return(
@@ -26,7 +24,7 @@ export function DrawerContent(props){
                             />
                         </View>
                         <View style={{flexDirection: 'column', marginLeft: 5}}>
-                            <Title style={styles.title}>Muhairiz Makame</Title>
+                            <Title style={styles.title}>Muhairiz Maulid Makame</Title>
                             <Caption style={styles.caption}>BITA/2/18/022/TZ</Caption>
                         </View>
                     </View>
@@ -54,6 +52,78 @@ export function DrawerContent(props){
                             )}
                             label="Profile"
                             onPress = {() => {props.navigation.navigate('Profile')}}
+                        />
+
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="contacts-outline"
+                                    color ={color}
+                                    size ={size}
+                                />
+                            )}
+                            label="Result"
+                            onPress = {() => {props.navigation.navigate('Result')}}
+                        />
+
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="book-outline"
+                                    color ={color}
+                                    size ={size}
+                                />
+                            )}
+                            label="Coursework"
+                            onPress = {() => {props.navigation.navigate('Result')}}
+                        />
+
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="check-outline"
+                                    color ={color}
+                                    size ={size}
+                                />
+                            )}
+                            label="Attendance"
+                            onPress = {() => {props.navigation.navigate('Result')}}
+                        />
+
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="message-outline"
+                                    color ={color}
+                                    size ={size}
+                                />
+                            )}
+                            label="Notice"
+                            onPress = {() => {props.navigation.navigate('Result')}}
+                        />
+
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="book-outline"
+                                    color ={color}
+                                    size ={size}
+                                />
+                            )}
+                            label="PT Application"
+                            onPress = {() => {props.navigation.navigate('Result')}}
+                        />
+
+                        <DrawerItem
+                            icon={({color, size}) => (
+                                <Icon
+                                    name="lock-outline"
+                                    color ={color}
+                                    size ={size}
+                                />
+                            )}
+                            label="Change Password"
+                            onPress = {() => {props.navigation.navigate('Result')}}
                         />
 
                     </Drawer.Section>
