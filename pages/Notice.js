@@ -5,14 +5,14 @@ import {
   StyleSheet,
 } from "react-native";
 
-const ProfilePage = () => {
+const NoticePage = () => {
     return(
         <View style={styles.container}>
-            <Text>Profile Page</Text>
+            <Text>Notice Page</Text>
         </View>
     );
 }
-export default ProfilePage;
+export default NoticePage;
 
 const styles = StyleSheet.create({
     container: {

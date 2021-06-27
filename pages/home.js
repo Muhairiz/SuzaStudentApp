@@ -11,6 +11,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 import ProfilePage from './Profile';
 import ResultPage from './Result';
 import CourseworkPage from './Coursework';
+import AttendancePage from './Attendance';
+import NoticePage from './Notice';
+import PracticalTrainingPage from './PracticalTraining';
+import ChangePasswordPage from './ChangePassword';
 import {DrawerContent} from './DrawerComponent';
 
 //Stacks List
@@ -18,6 +22,10 @@ const HomeStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
 const ResultStack = createStackNavigator();
 const CourseworkStack = createStackNavigator();
+const AttendanceStack = createStackNavigator();
+const NoticeStack = createStackNavigator();
+const PracticalTrainingStack = createStackNavigator();
+const ChangePasswordStack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 //Navigation Drawer
@@ -28,6 +36,10 @@ export default function Home() {
       <Drawer.Screen name="Profile" component={ProfileStackScreen} />
       <Drawer.Screen name="Result" component={ResultStackScreen} />
       <Drawer.Screen name="Coursework" component={CourseworkStackScreen} />
+      <Drawer.Screen name="Attendance" component={AttendanceStackScreen} />
+      <Drawer.Screen name="Notice" component={NoticeStackScreen} />
+      <Drawer.Screen name="PracticalTraining" component={PracticalTrainingStackScreen} />
+      <Drawer.Screen name="ChangePassword" component={ChangePasswordStackScreen} />
     </Drawer.Navigator>
   );
 }
@@ -130,5 +142,93 @@ const CourseworkStackScreen =({navigation}) =>(
 </CourseworkStack.Navigator>
 );
 // //////////END-Coursework////////////////////////////////////////////////////////////////
+
+// //////////Attendance////////////////////////////////////////////////////////////////
+const AttendanceStackScreen =({navigation}) =>(
+  <AttendanceStack.Navigator screenOptions={{
+      headerStyle: {
+        backgroundColor: 'dodgerblue',
+      },
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+    }}>
+  <AttendanceStack.Screen name="Attendance" component={AttendancePage} options={{
+      title: 'Attendance',
+      headerLeft: () => (
+          <Icon.Button name='ios-menu' size={35} backgroundColor='dodgerblue'
+          onPress ={ () => {navigation.openDrawer();}} />
+      )
+  }} />
+</AttendanceStack.Navigator>
+);
+// //////////END-Attendance////////////////////////////////////////////////////////////////
+
+// //////////Notice////////////////////////////////////////////////////////////////
+const NoticeStackScreen =({navigation}) =>(
+  <NoticeStack.Navigator screenOptions={{
+      headerStyle: {
+        backgroundColor: 'dodgerblue',
+      },
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+    }}>
+  <NoticeStack.Screen name="Notice" component={NoticePage} options={{
+      title: 'Notice',
+      headerLeft: () => (
+          <Icon.Button name='ios-menu' size={35} backgroundColor='dodgerblue'
+          onPress ={ () => {navigation.openDrawer();}} />
+      )
+  }} />
+</NoticeStack.Navigator>
+);
+// //////////END-Notice////////////////////////////////////////////////////////////////
+
+// //////////PracticalTraining////////////////////////////////////////////////////////////////
+const PracticalTrainingStackScreen =({navigation}) =>(
+  <PracticalTrainingStack.Navigator screenOptions={{
+      headerStyle: {
+        backgroundColor: 'dodgerblue',
+      },
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+    }}>
+  <PracticalTrainingStack.Screen name="PracticalTraining" component={PracticalTrainingPage} options={{
+      title: 'Practical Training',
+      headerLeft: () => (
+          <Icon.Button name='ios-menu' size={35} backgroundColor='dodgerblue'
+          onPress ={ () => {navigation.openDrawer();}} />
+      )
+  }} />
+</PracticalTrainingStack.Navigator>
+);
+// //////////END-PracticalTraining////////////////////////////////////////////////////////////////
+
+// //////////ChangePassword////////////////////////////////////////////////////////////////
+const ChangePasswordStackScreen =({navigation}) =>(
+  <ChangePasswordStack.Navigator screenOptions={{
+      headerStyle: {
+        backgroundColor: 'dodgerblue',
+      },
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontWeight: 'bold'
+      }
+    }}>
+  <ChangePasswordStack.Screen name="ChangePassword" component={ChangePasswordPage} options={{
+      title: 'Practical Training',
+      headerLeft: () => (
+          <Icon.Button name='ios-menu' size={35} backgroundColor='dodgerblue'
+          onPress ={ () => {navigation.openDrawer();}} />
+      )
+  }} />
+</ChangePasswordStack.Navigator>
+);
+// //////////END-ChangePassword////////////////////////////////////////////////////////////////
 
 

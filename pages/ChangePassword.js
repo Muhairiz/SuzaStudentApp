@@ -5,14 +5,14 @@ import {
   StyleSheet,
 } from "react-native";
 
-const ProfilePage = () => {
+const ChangePasswordPage = () => {
     return(
         <View style={styles.container}>
-            <Text>Profile Page</Text>
+            <Text>Change Password Page</Text>
         </View>
     );
 }
-export default ProfilePage;
+export default ChangePasswordPage;
 
 const styles = StyleSheet.create({
     container: {

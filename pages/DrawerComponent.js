@@ -17,10 +17,8 @@ export function DrawerContent(props){
                     <View style={styles.userInfoSection}>
                         <View style={{marginTop: 15}}>
                             <Avatar.Image
-                                source={{
-                                    uri: "../assets/avatar.png"
-                                }}
-                                size={60}
+                                source={require('../assets/muhairiz.jpg')}
+                                size={100}
                             />
                         </View>
                         <View style={{flexDirection: 'column', marginLeft: 5}}>
@@ -75,7 +73,7 @@ export function DrawerContent(props){
                                 />
                             )}
                             label="Coursework"
-                            onPress = {() => {props.navigation.navigate('Result')}}
+                            onPress = {() => {props.navigation.navigate('Coursework')}}
                         />
 
                         <DrawerItem
@@ -87,7 +85,7 @@ export function DrawerContent(props){
                                 />
                             )}
                             label="Attendance"
-                            onPress = {() => {props.navigation.navigate('Result')}}
+                            onPress = {() => {props.navigation.navigate('Attendance')}}
                         />
 
                         <DrawerItem
@@ -99,7 +97,7 @@ export function DrawerContent(props){
                                 />
                             )}
                             label="Notice"
-                            onPress = {() => {props.navigation.navigate('Result')}}
+                            onPress = {() => {props.navigation.navigate('Notice')}}
                         />
 
                         <DrawerItem
@@ -111,7 +109,7 @@ export function DrawerContent(props){
                                 />
                             )}
                             label="PT Application"
-                            onPress = {() => {props.navigation.navigate('Result')}}
+                            onPress = {() => {props.navigation.navigate('PracticalTraining')}}
                         />
 
                         <DrawerItem
@@ -123,7 +121,7 @@ export function DrawerContent(props){
                                 />
                             )}
                             label="Change Password"
-                            onPress = {() => {props.navigation.navigate('Result')}}
+                            onPress = {() => {props.navigation.navigate('ChangePassword')}}
                         />
 
                     </Drawer.Section>

@@ -4,10 +4,6 @@ import {
   View,
   StyleSheet,
 } from "react-native";
-import { createStackNavigator } from '@react-navigation/stack';
-const ResultStack = createStackNavigator();
-
-
 
 const ResultPage = () => {
     return(
@@ -17,8 +13,6 @@ const ResultPage = () => {
     );
 }
 export default ResultPage;
-
-
 
 const styles = StyleSheet.create({
     container: {
