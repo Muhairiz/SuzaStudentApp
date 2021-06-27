@@ -5,18 +5,18 @@ import {
   StyleSheet,
 } from "react-native";
 import { createStackNavigator } from '@react-navigation/stack';
-const ProfileStack = createStackNavigator();
+const CourseworkStack = createStackNavigator();
 
 
 
-const ProfilePage = () => {
+const CourseworkPage = () => {
     return(
         <View style={styles.container}>
-            <Text>Profile Page</Text>
+            <Text>Coursework Page</Text>
         </View>
     );
 }
-export default ProfilePage;
+export default CourseworkPage;
 
 
 

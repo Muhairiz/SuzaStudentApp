@@ -1,7 +1,7 @@
 import  React from 'react';
 import { TouchableOpacity } from 'react-native';
 import {Icon} from 'react-native-elements';
-import { StyleSheet, Text, View, StatusBar, TextInput, Button } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, TextInput} from 'react-native';
 
 const LoginScreen =({navigation}) =>{
     return (

@@ -2,7 +2,6 @@ import React from "react";
 import {
   Text,
   View,
-  Button,
   StyleSheet,
 } from "react-native";
 import { createStackNavigator } from '@react-navigation/stack';
