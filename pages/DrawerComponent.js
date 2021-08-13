@@ -9,6 +9,7 @@ import {
     } from "@react-navigation/drawer";
 import {Avatar,Title,Caption,Drawer} from 'react-native-paper';
 
+
 export function DrawerContent(props){
     return(
         <View style={{flex: 1}}>
@@ -138,7 +139,7 @@ export function DrawerContent(props){
                         />
                     )}
                     label='Sign Out'
-                    onPress ={() => {}}
+                    onPress ={() => {props.navigation.navigate('Login')}}
                 />
             </Drawer.Section>
         </View>
@@ -148,6 +149,7 @@ export function DrawerContent(props){
 const styles = StyleSheet.create({
     contentDrawer: {
         flex: 1,
+        backgroundColor: 'silver'
     },
     userInfoSection: {
         paddingLeft: 20,

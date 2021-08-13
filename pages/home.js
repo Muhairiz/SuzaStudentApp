@@ -84,6 +84,7 @@ const ProfileStackScreen =({navigation}) =>(
           fontWeight: 'bold'
         }
       }}>
+        
     <ProfileStack.Screen name="Profile" component={ProfilePage} options={{
         title: 'Profile',
         headerLeft: () => (
@@ -221,7 +222,7 @@ const ChangePasswordStackScreen =({navigation}) =>(
       }
     }}>
   <ChangePasswordStack.Screen name="ChangePassword" component={ChangePasswordPage} options={{
-      title: 'Practical Training',
+      title: 'Change Password',
       headerLeft: () => (
           <Icon.Button name='ios-menu' size={35} backgroundColor='dodgerblue'
           onPress ={ () => {navigation.openDrawer();}} />
